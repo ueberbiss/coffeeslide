@@ -1,0 +1,79 @@
+/* This html block down here is needed only when you want
+a "photographic" background like in the examples */
+
+html{
+
+	background: #ececec url(../img/bg3.jpg);no-repeat center center;
+	min-height:100%;
+	background-size:cover;
+
+}
+
+#full-slider-wrapper {
+    overflow: hidden;
+}
+
+#full-slider {
+    position: relative;
+    width: 100%;
+    height: 768px;
+    margin: 0 auto;
+}
+
+/* Change "height: auto" from down here if you want a fixed height 
+	 in pixels for the dynamic divs overlay */
+
+#full-slider .slide-panel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    visibility: hidden;
+}
+
+#full-slider .slide-panel.active {
+    visibility: visible;
+}
+
+#full-slider-nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#full-slider-nav-left, #full-slider-nav-right {
+    display: inline-block;
+    height: 0;
+    width: 0;
+    margin-left: 15px;
+    border: 20px solid transparent;
+    cursor: pointer;
+}
+
+#full-slider-nav-left {
+    border-right-color: #BBB;
+}
+
+#full-slider-nav-left:hover {
+    border-right-color: #999;
+}
+
+#full-slider-nav-right {
+    border-left-color: #BBB;
+}
+
+#full-slider-nav-right:hover {
+    border-left-color: #999;
+}
+
+/* Transparent Overlay Styles */
+
+#full-slider .slide-panel {
+    background-color: rgba(0,0,0,0.5);
+    color: #f3f3f3;
+		-moz-border-radius: 10px;
+		-webkit-border-radius: 10px;
+		 border-radius: 10px;
+		-khtml-border-radius: 10px;
+}
