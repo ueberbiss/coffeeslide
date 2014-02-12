@@ -1,5 +1,3 @@
-# The CoffeeSlide Magic!
-
 $ ->
   slidePanel = (newPanel, direction) ->
     

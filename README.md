@@ -2,38 +2,45 @@
 
 # CoffeeSlide
 
-## Responsive HTML5 Full Page Content Slider (Coffeescript + jQuery)
+## Responsive HTML5 Full Page Content Slider jQuery powered)
 
-CoffeeSlide is a full page HTML5 content slider built with CoffeeScript + jQuery; It is fully Responsive thanks to Twitter Bootstrap and it supports both modern browsers & IE thanks to Chrome Frame.
+CoffeeSlide is a full page HTML5 content slider built with CoffeeScript + jQuery; It is fully Responsive by it's own (doesn't need any plugins) and it supports all browsers.
 
 ### Usage:
 
-Include jQuery at the top of your page's head, you can use the google's hosted version as in the examples with:
+Inculde the **HTML5-shim** in your webpage's head
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 
-Then include the **coffe-script.js** file too, as in the example. Now also include the *bootstrap*, *bootstrap-responsive* and one of the *styles* stylesheets, (in fact rename it to only *styles* for convention); Open the **styles.css** file and there you can customize the slider at your heart's content. Basically the file has three comments guiding you about basic things you might want to change: The background's behavior, the height of the transparent overlay where your content reside (which is dynamic by default) and other important styles of that same overlay.
+Then include the slider's css (in the head too):
 
-include the **bootstrap.min.js** script down the stylesheets and finally the **viewport meta-tag**
+    <link rel="stylesheet" href="css/coffeeslide.min.css">
 
-Use the HTML 5 Skeleton of the examples to create your own page... Note that we are including the *coffee* code and the chrome frame **before** closing the *body* tag in the main page. Replace the "destination" attribute of the Chrome Frame Script with the main URL of your site and include the following meta-tag in all other pages of your site (if you have such):
+Note that the non-minified version of the file has two comments guiding you about basic things you might want to change: the height of the transparent overlay where your content reside (which is dynamic by default) and other important styles of that same overlay.
 
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+Include jQuery and the slider's script before closing your body tag:
+
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>  
+    <script src="js/coffeeslide.min.js"></script>
+
+And you're good to go...
+
+Use the HTML 5 Skeleton of the included demo to create your own page... Note that the slider will adapt to it's container width so if you want it to be responsive, you need to set the container's width to a percentage instead of a fixed *px measure.
 
 You can place any HTML code and/or content in your slides and have as many slides as you want.  
 
 That's all!  
 
-P.S. If you don't want to use bootstrap only for responsiveness, you can safely replace it by any other framework/boilerplate that you want without any problems.
-
 Created by: [@Jmlevick][2]  
-License: [Beerware][3]  
-Demo: [http://coffeeslide.kawlenet.appspot.com][4]
+License: [Coffeeware][3]  
+Demo: [http://xenodesystems.appspot.com/coffeeslide.html][4]
 
 [![endorse](http://api.coderwall.com/jmlevick/endorsecount.png)](http://coderwall.com/jmlevick)
 
 
-  [1]: http://commondatastorage.googleapis.com/xenodecdn/coffeeslide-logo.png
+  [1]: https://spideroak.com/share/PBSW433EMVZXS43UMVWXG/78656e6f6465/var/CDN/xenodecdn/github-assets/coffeeslide-logo.png
   [2]: http://twitter.com/Jmlevick
-  [3]: http://en.wikipedia.org/wiki/Beerware
-  [4]: http://coffeeslide.kawlenet.appspot.com
+  [3]: https://github.com/Jmlevick/coffeeware-license
+  [4]: http://xenodesystems.appspot.com/coffeeslide.html
