@@ -40,7 +40,7 @@ Demo: [http://xenodesystems.appspot.com/coffeeslide.html][4]
 [![endorse](http://api.coderwall.com/jmlevick/endorsecount.png)](http://coderwall.com/jmlevick)
 
 
-  [1]: https://spideroak.com/share/PBSW433EMVZXS43UMVWXG/78656e6f6465/var/CDN/xenodecdn/github-assets/coffeeslide-logo.png
+  [1]: https://spideroak.com/share/PBSW433EMVZXS43UMVWXG/78656e6f6465/srv/CDN/xenodecdn/github-assets/coffeeslide-logo.png
   [2]: http://twitter.com/Jmlevick
   [3]: https://github.com/Jmlevick/coffeeware-license
   [4]: http://xenodesystems.appspot.com/coffeeslide.html
